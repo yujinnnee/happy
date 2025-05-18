@@ -115,18 +115,19 @@
 
 .container2 {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  justify-content: center;
+  gap: 20px;
+  max-width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
 }
+
 
 .step-box {
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
-  padding: 24px;
+  padding: 3%;
   width: 100%;
   max-width: 300px;
   text-align: center;
@@ -144,9 +145,8 @@
 
 .step-title {
   color: #e65a5a;
-  /* font-size: 14px; */
-  font-weight: 600;
   margin: 0;
+  white-space: nowrap;
 }
 
 .step-icon {
@@ -259,6 +259,7 @@
   font-weight: bold;
   color: #fff;
   cursor: default;
+  pointer-events: none;
 }
 
 .loan-list .approved {
@@ -281,6 +282,7 @@
 .container6 .text-box {
   /* flex: 1 1 400px;
   max-width: 600px; */
+  flex: 1;
 }
 
 .container6 h3 {
@@ -347,10 +349,11 @@
 .container6 .img-box {
   /* flex: 1 1 300px;
   text-align: center; */
+  flex: 1;
 }
 
 .container6 .img-box img {
-  max-width: 600px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -474,6 +477,7 @@
   text-decoration: none;
   z-index: 9999;
   transition: transform 0.2s ease;
+  justify-content: center;
 }
 
 .kakao-chat-widget:hover {

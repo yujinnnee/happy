@@ -281,8 +281,10 @@
   };
 
   window.addEventListener('scroll', revealSections);
+  window.addEventListener('resize', revealSections); // 👈 리사이즈 시에도 실행
 
-  revealSections();
+  revealSections(); // 초기 실행
 </script>
+
 
 </html>
