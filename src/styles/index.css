@@ -485,3 +485,121 @@
   height: 30px;
   margin-right: 8px;
 }
+
+.mobile-break {
+  display: none;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .mobile-break {
+    display: inline;
+  }
+  
+  .container1 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .container1 .image-section {
+    order: -1; /* 이미지가 위로 */
+    min-width: auto;
+    margin-bottom: 20px;
+  }
+
+  .container1 .text-section {
+    width: 100%;
+  }
+
+  .container4 .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .info-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-group a {
+    padding: 1vh 0;
+  }
+
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-box {
+    max-width: 100%;
+  }
+
+  .container3 .gallery-container img {
+    max-width: 100%;
+  }
+
+  .container5 {
+    padding: 0 15px;
+  }
+
+  .loan-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .loan-list li span:nth-child(2),
+  .loan-list li span:last-child {
+    text-align: left;
+    margin-right: 0;
+  }
+
+  .container6 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container6 .img-box img {
+    max-width: 100%;
+  }
+
+  .container7 .job-item {
+    width: 80px;
+  }
+
+  .container7 .job-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .container9 .service-box {
+    max-width: 100%;
+  }
+
+  .faq-list {
+    grid-template-columns: 1fr;
+  }
+
+  .kakao-chat-widget {
+    width: auto;
+    font-size: 1rem;
+    padding: 8px 12px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+  }
+  
+}
